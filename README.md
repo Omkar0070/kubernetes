@@ -41,7 +41,8 @@
 
 
 
-   Kubernetes when started gives something called a cluster which consists of control plane and worker nodes. These worker nodes are the ones that run containerized applications. Every cluster has at least one worker node.
+   Kubernetes when started gives something called a cluster which consists of control plane and worker nodes. 
+   These worker nodes are the ones that run containerized applications. Every cluster has at least one worker node.
 
    Control Plane Components:
 
@@ -55,7 +56,9 @@
        It detects crashing of pods. So while pods die controller manager detects that and attempts to get better the cluster state as quickly as possible and for that it makes a request for the scheduler to reschedule the restart of that pod.
     
     etcd:
-      etcd which is a key value store of a cluster state. It is a like the brain of the cluster. Every change in the cluster gets saved or updated into this key value store of etcd. The scheduler gets the information like what resources are available on each worker node and the controller manager knows that a cluster state changed in some way through etcd.
+       etcd which is a key value store of a cluster state. It is a like the brain of the cluster. 
+       Every change in the cluster gets saved or updated into this key value store of etcd. 
+       The scheduler gets the information like what resources are available on each worker node and the controller manager knows that a cluster state changed in some way through etcd.
    
    Components of the Worker Node:
 
@@ -63,10 +66,13 @@
         It runs on each node in the cluster. It's number one goal is that it looks at the specification of the pods entered into the API server and makes sure that the containers described in that pod specification are running and healthy. It restarts the pod if any issue is noticed by it.
 
     Kube-Proxy:
-        It is a network proxy that runs on each node in your cluster. It maintains the entire communication through networking. If worker node or cluster wants to communicate with outside network it makes sure to provide a communication medium. It also provides every worker node to have its own unique IP address.
+        It is a network proxy that runs on each node in your cluster. It maintains the entire communication through networking. 
+        If worker node or cluster wants to communicate with outside network it makes sure to provide a communication medium. 
+        It also provides every worker node to have its own unique IP address.
      
      Container Runtime:
-         It is responsible for running containers. A container runtime is required on every node in your cluster. Without it, pods in Kubernetes are non-existent.
+         It is responsible for running containers. A container runtime is required on every node in your cluster. 
+         Without it, pods in Kubernetes are non-existent.
 
      Kubernetes DNS:
           Kubernetes has its own internal DNS service. Every cluster has its own IP address and K8's DNS makes sure communication between different pods in separate cluster is possible.
@@ -79,7 +85,9 @@
 
 ![Pod Phases](podPhases.png)
 
-     The lifecycle of a Pod in Kubernetes consists of several phases, starting from the creation of the Pod until its termination. Understanding the Pod lifecycle is crucial for managing and troubleshooting applications running in Kubernetes. Here are the main phases of the Pod lifecycle:
+     The lifecycle of a Pod in Kubernetes consists of several phases, starting from the creation of the Pod until its termination.
+     Understanding the Pod lifecycle is crucial for managing and troubleshooting applications running in Kubernetes. 
+     Here are the main phases of the Pod lifecycle:
 
      Pending:
        The Pod has been created, but the necessary resources (CPU, memory, etc.) have not been allocated on a worker node yet.
@@ -98,8 +106,9 @@
         The Pod will remain in the Failed phase until it is manually deleted or terminated by a policy.  
     
      Unknown:
-        The state of the Pod cannot be determined, typically due to an error in communication between the Kubernetes control plane and the node where the Pod is running.
+         The state of the Pod cannot be determined, typically due to an error in communication between the Kubernetes control plane and the node where the Pod is running.
         The Unknown phase is considered a transient state and should resolve once the communication issue is resolved
+
 ## Objects:
 - Pod - Smallest unit of kubernetes. Its just wrapping around the container
 - Service - Expose application 
