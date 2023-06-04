@@ -61,7 +61,8 @@
     etcd:
        etcd which is a key value store of a cluster state. It is a like the brain of the cluster. 
        Every change in the cluster gets saved or updated into this key value store of etcd. 
-       The scheduler gets the information like what resources are available on each worker node and the controller manager knows that a cluster state changed in some way through etcd.
+       The scheduler gets the information like what resources are available on each worker node and
+       the controller manager knows that a cluster state changed in some way through etcd.
    
    Components of the Worker Node:
 
@@ -78,7 +79,8 @@
          Without it, pods in Kubernetes are non-existent.
 
      Kubernetes DNS:
-          Kubernetes has its own internal DNS service. Every cluster has its own IP address and K8's DNS makes sure communication between different pods in separate cluster is possible.
+        Kubernetes has its own internal DNS service. Every cluster has its own IP address and K8's DNS makes sure communication 
+        between different pods in separate cluster is possible.
 
 
 
@@ -109,7 +111,8 @@
         The Pod will remain in the Failed phase until it is manually deleted or terminated by a policy.  
     
      Unknown:
-         The state of the Pod cannot be determined, typically due to an error in communication between the Kubernetes control plane and the node where the Pod is running.
+        The state of the Pod cannot be determined, typically due to an error in communication between 
+        the Kubernetes control plane and the node where the Pod is running.
         The Unknown phase is considered a transient state and should resolve once the communication issue is resolved
 
 ## Objects:
