@@ -12,25 +12,28 @@
    Kubernetes is used for scaling, deploying, and managing containerized applications and services across different platforms, environments, and operating systems. It saves developers and operators time and effort, and keeps applications running well, at scale, despite challenges. It is an open-source, portable, and extensible platform that uses declarative configurations and automation. It is a standard for container orchestration and virtualization management software.
 
    Kubernetes provides a way to schedule and deploy those containers—plus scale them to your desired state and manage their lifecycles. Use Kubernetes to implement your container-based applications in a portable, scalable and extensible way.
-
-    Kubernetes enables cloud managers to manage their cloud better. It can abstract networks, storage and even machines from their physical implementation, and give true automation to the administration. In short, you get a single interface where you can manage virtual machines, their physical states and even different types of clouds.
-
-    Kubernetes services provide load balancing and simplify container management on multiple hosts. They make it easy for an enterprise’s apps to have greater scalability and be flexible, portable and more productive
+   
+   Kubernetes enables cloud managers to manage their cloud better. 
+   It can abstract networks, storage and even machines from their physical implementation, and give true automation to the administration. 
+   In short, you get a single interface where you can manage virtual machines, their physical states and even different types of clouds.
+    
+    Kubernetes services provide load balancing and simplify container management on multiple hosts. 
+    They make it easy for an enterprise’s apps to have greater scalability and be flexible, portable and more productive
 
 
 ## Features of kubernetes?
-    Kubernetes provides an easy-to-use platform for deploying, managing, and scaling containerized applications.
+        Kubernetes provides an easy-to-use platform for deploying, managing, and scaling containerized applications.
     
-     It simplifies the process of deploying and managing applications in a distributed environment.
-
+    It simplifies the process of deploying and managing applications in a distributed environment.
+    
      Kubernetes is designed to be fault-tolerant and resilient.
-
+     
      It offers a range of tools and services for building, deploying, and managing applications.
-
+     
      Kubernetes makes it easy to scale applications quickly and efficiently.
 
      It provides a platform for continuous integration and delivery (CI/CD).
-
+     
      Kubernetes is open-source and free to use.
 
    
